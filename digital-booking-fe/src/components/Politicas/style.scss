@@ -1,0 +1,33 @@
+.politicasProduto{
+padding: 6%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    h2{
+        color: #31363F;
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 20px;
+        text-align: left;
+        border-bottom: solid 1px #F0572D;
+    }
+    .normasProduto{
+        text-align: justify;
+        strong{
+            color:#F0572D
+        }
+    }
+
+    .segurancaProduto{
+        text-align: justify;
+        strong{
+            color:#F0572D
+        }
+    }
+
+    .cancelamentoProduto{
+        text-align: justify;
+        strong{
+            color:#F0572D
+        }
+    }
+}

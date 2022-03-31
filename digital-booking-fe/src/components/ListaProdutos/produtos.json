@@ -1,0 +1,146 @@
+[
+    {
+        "id":1,
+        "img": "https://p.bookcdn.com/data/Photos/Big/8934/893474/893474896/Amdar-Sun-And-View-photos-Exterior-Sweet-inn.JPEG",
+        "categoria": "Apartamento",
+        "nome": "Yam Suf Sun and Viewsdfsdf",
+        "cidade": "1500",
+        "nota": "1",
+        "estrelas": 1,
+        "notaVerbal": "Ótimo",
+        "opcionais":{
+            "ac":true, 
+            "wifi":true, 
+            "pet":false, 
+            "garagem":true, 
+            "tv":false
+        },
+        "descricao": "Situado em Eilat, no bairro sul de Israel, com as praias Kisuski e HaPnina Nas proximidades, o Yam Suf Sun and View oferece acomodações com..."
+    },
+    {
+        "id":2,
+        "img": "https://brasileiro.review/wp-content/uploads/56395666.jpg",
+        "categoria": "Hotel",
+        "nome": "Ferian Plaza Hotel",
+        "cidade": "150",
+        "nota": "7",
+        "estrelas": 3,
+        "notaVerbal": "Bom",
+        "opcionais":{
+            "ac":false, 
+            "wifi":true, 
+            "pet":true, 
+            "garagem":true, 
+            "tv":true
+        },
+        "descricao": "Localizado na cidade de Itapira, o Ferian Plaza Hotel oferece quartos com ar-condicionado, Wi-Fi gratuito e café da manhã de cortesia servido..."
+    },
+    {
+        "id":3,
+        "img": "https://q-xx.bstatic.com/xdata/images/hotel/max1000/54784960.jpg?k=96972cf323cbc5ec3c9ae8fff73a172a1587b0693ee6e6838f9ee2beaa3c20b6",
+        "categoria": "Hotel",
+        "nome": "Hotel Praça da Matriz ",
+        "cidade": "200",
+        "nota": "7",
+        "estrelas": 3,
+        "notaVerbal": "Bom",
+        "opcionais":{
+            "ac":true, 
+            "wifi":true, 
+            "pet":false, 
+            "garagem":false, 
+            "tv":true
+        },
+        "descricao": "Com um bar, o Hotel Praça da Matriz está situado em Itapira. A propriedade oferece recepção 24 horas, lounge compartilhado e Wi-Fi gratuito..."
+    },
+    {
+        "id":4,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD51CpGLvnzvkAIF2SRG7Hbrnk5HcOyzVJ8Q&usqp=CAU",
+        "categoria": "Hotel",
+        "nome": "Studio Smart",
+        "cidade": "350",
+        "nota": "8",
+        "estrelas": 4,
+        "notaVerbal": "Muito bom",
+        "opcionais":{
+            "ac":true, 
+            "wifi":true, 
+            "pet":true, 
+            "garagem":true, 
+            "tv":true
+        },
+        "descricao": "As acomodações dispõem de ar-condicionado, cozinha compacta totalmente equipada com área para refeições, TV de tela plana e banheiro priva..."
+    },
+    {
+        "id":5,
+        "img": "https://media.guestdesk.com/sites/myrtlebeachcondorentals_com/images/resvsystemimages/sandsbeachclub01_3999296.jpg",
+        "categoria": "Apartamento",
+        "nome": "Sands Ocean Club",
+        "cidade": "305",
+        "nota": "8",
+        "estrelas": 4,
+        "notaVerbal": "Muito Bom",
+        "opcionais":{
+            "ac":false, 
+            "wifi":true, 
+            "pet":false, 
+            "garagem":true, 
+            "tv":true
+        },
+        "descricao": "À beira-mar de Myrtle Beach, o South Carolina Sands Ocean Club resort oferece piscinas ao ar livre e coberta, além de quartos com WiFi gra..."
+    },
+    {
+        "id":6,
+        "img": "https://i.pinimg.com/736x/f1/04/c6/f104c661fa6c97d988aade8024a4b35e.jpg",
+        "categoria": "Casa",
+        "nome": "Casa do Fulano",
+        "cidade": "300",
+        "nota": "5",
+        "estrelas": 3,
+        "notaVerbal": "Bom",
+        "opcionais":{
+            "ac":false, 
+            "wifi":false, 
+            "pet":true, 
+            "garagem":true, 
+            "tv":false
+        },
+        "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident. Enim alias, placeat saepe libero voluptas ducimus quis corpor..."
+    },
+    {
+        "id":7,
+        "img": "https://image.chavesnamao.com.br/api/view/49C9r9mD75Y3-qu6-2g0G9MnYeI=/628x400/filters:quality(90)/blog-cnm/2018/11/3f038fc50b13cf9df4def6bfa0450899.jpg",
+        "categoria": "Quarto",
+        "nome": "Quarto",
+        "cidade": "300",
+        "nota": "1",
+        "estrelas": 1,
+        "notaVerbal": "Péssimo",
+        "opcionais":{
+            "ac":false, 
+            "wifi":false, 
+            "pet":true, 
+            "garagem":false, 
+            "tv":true
+        },
+        "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident. Enim alias, placeat saepe libero voluptas ducimus quis corpo..."
+    },
+    {
+        "id":8,
+        "img": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/217424325.jpg?k=6bec4abbf6bf2be5e3a2ce67a368f9ce10075bdabc6fcf88897b23b07b54d7ee&o=&hp=1",
+        "categoria": "Casa",
+        "nome": "Casa",
+        "cidade": "2",
+        "nota": "10",
+        "estrelas": 5,
+        "notaVerbal": "Ótimo",
+        "opcionais":{
+            "ac":true, 
+            "wifi":true, 
+            "pet":true, 
+            "garagem":true, 
+            "tv":true
+        },
+        "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident. Enim alias, placeat saepe libero voluptas ducimus quis corpo..."
+    }
+]

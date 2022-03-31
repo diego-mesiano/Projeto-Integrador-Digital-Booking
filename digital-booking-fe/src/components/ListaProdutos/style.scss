@@ -1,0 +1,27 @@
+.produtos{
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    @media (max-width: 1769px) {
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+    @media (max-width: 1577px) {
+        margin-left: 3%;
+        margin-right: 3%;
+        
+    }
+    
+    .tituloProdutos{
+        h2{
+            text-align: left;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            color: #191B1D;
+            
+        }
+    }
+}
+

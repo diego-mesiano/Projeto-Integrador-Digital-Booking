@@ -1,0 +1,234 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.image-gallery-icon:hover{
+    color: #F0572D;
+}
+
+.image-gallery-thumbnail-image:hover{
+    border-color: #F0572D;
+}
+
+.detalheProduto{
+    background-color: #FFFFFF;
+    .cabecalhoProduto{
+        background-color:#545776;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .titulosProduto{
+            padding-left: 6%;
+            .categoriaProduto{
+                opacity: 1;
+                color: #F3F1ED;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+            }
+            .nomeProduto{
+                color: #FFFFFF;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+            }
+            
+        }
+        .voltarProduto{
+            padding-right: 6%;
+        }
+    }
+
+    .avaliacaoElocalizacaoProduto{
+        background: #DFE4EA;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .localizacaoProduto{
+            .textoLocalizacao{
+                margin-left: 6px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                color: #383B58;
+            }
+        }
+
+        .avaliacaoProduto{
+            .area1{
+                margin-right: 5px;
+                .notaVerbalArea1{
+                    color: #383B58;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    margin-bottom: -10px;
+                    text-align: center;
+                    
+                }
+            }
+        }
+    }
+    .favShare{
+        padding-left: 7%;
+        padding-right: 7%;
+        margin-top: 0.5%;
+        img{
+            margin-right: 20px;
+        }
+    }
+    .imagensProduto{
+        padding: 6%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        
+    }
+
+    .descricaoProduto{
+        padding: 6%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+       
+        .qualificacaoProduto{
+            text-align: left;
+            padding-bottom: 10px;
+            font-weight: 600;
+            font-size: 20px;
+            color: #F0572D;
+            border-top: solid 1px #F0572D;
+        }
+
+        .descricaoProduto{
+            padding: 0;
+            text-align: justify;
+            font-weight: 500;
+            font-size: 16px;
+            
+        }
+    }
+
+    .caracteristicasProduto{
+        padding: 6%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        flex-direction: column;
+        h2{
+            color: #31363F;
+            font-weight: 700;
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: left;
+            border-bottom: solid 1px #F0572D;
+            padding-bottom: 5px;
+        }
+    }
+    .tituloDatas{
+        padding-left: 6%;
+        
+        text-align: left;
+        font-weight: 700;
+        font-size: 20px;
+        color: #31363F;
+    }
+    .reserva{
+        margin-left: 6%;
+        margin-right: 6%;
+        padding-top: 15px;
+        background-color: #F3F1ED ;
+        min-height: 430px;
+        border: solid 1px rgb(221,221,221);
+        box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
+        border-radius: 12px;
+        @media (max-width: 400px) {
+            border: none;
+            border-radius: initial;
+            box-shadow: none;
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 6%;
+            padding-right: 6%;
+        }
+       
+        
+        .calendarioContainer{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            @media (max-width: 1150px) {
+                flex-direction: column;
+            }
+            
+            .iniciarReserva{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 5px;
+                background-color: #FFFFFF;
+                
+                @media (max-width: 1438px) {
+                    max-width: 400px;
+                }
+
+                @media (max-width: 1249px) {
+                    max-width: 300px;
+                }
+
+                @media (max-width: 1150px) {
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+                    min-width: 100%;
+                    box-shadow: none;
+                    background-color: #F3F1ED;
+                    margin-top: 10px;
+                }
+
+                @media (max-width: 680px) {
+                    flex-direction: column;
+                }
+
+                
+                h2{
+                    margin: 0;
+                    font-size: 20px;
+                    padding-left: 6%;
+                    padding-right: 6%;
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+                    color:#31363F;
+                    text-align: center;
+                }
+                .btnReserva{
+                    text-align: center;
+                    display: block;
+                    min-width: 206px;
+                    min-height: 40px;
+                    margin-bottom: 30px;
+                    
+                    @media (max-width: 1150px) {
+                        margin: 0;
+                        margin-bottom: 10px;
+                    }
+                   
+                }
+                .btn-warning {
+                    color: #FFFFFF;
+                    border-color: #F0572D;
+                    background-color: #F0572D;
+                }
+                .btn-warning:hover{
+                    background-color: #f07755;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    
+}
+

@@ -1,0 +1,65 @@
+.lnkCategorias{
+    text-decoration: none;
+}
+.cardCategoria{
+    max-width: 310px;
+    max-height: 250px;
+    background: #FFFFFF;
+    border: 0px solid #F3F1ED;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+    @media (max-width: 1390px) {
+        width: 250px;
+        height: 200px;
+    }
+    @media (max-width: 1110px) {
+        width: 200px;
+        height: 180px;
+    }
+    @media (max-width: 905px) {
+        width: 310px;
+        height: 250px;
+    }
+
+    @media (max-width: 725px) {
+        width: 250px;
+        height: 200px;
+    }
+    @media (max-width: 630px) {
+        width: 200px;
+        height: 180px;
+    }
+    @media (max-width: 500px) {
+        width: 340px;
+        height: 290px;
+    }
+
+
+    .imgCategoria{
+       
+       object-fit:cover;
+       border-top-left-radius: 10px;
+       border-top-right-radius: 10px;
+    }
+    .cardDescricao{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        .tituloCard{
+            font-size: 20px;
+            font-weight: 700;
+            margin-left: 10px;
+            color:#31363F;
+        }
+
+        .qtdCard{
+            font-weight: bold;
+            font-size: 14px;
+            margin-left: 10px;
+            opacity: 0.6;
+            color: #31363F;
+            margin-top: -5px;
+        }
+    }
+}

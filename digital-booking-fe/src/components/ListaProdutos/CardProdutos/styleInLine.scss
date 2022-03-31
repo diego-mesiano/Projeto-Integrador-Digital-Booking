@@ -1,0 +1,18 @@
+#carddd{
+    max-width: 700px;
+    @media (max-width: 1511px) {
+        max-width: 650px;
+    }
+    @media (max-width: 1393px) {
+        max-width: 600px;
+    }
+    @media (max-width: 1291px) {
+        max-width: 550px;
+    }
+    @media (max-width: 1181px) {
+        max-width: 500px;
+    }
+    @media (max-width: 1075px) {
+        max-width:none;
+    }
+}

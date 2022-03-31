@@ -1,0 +1,29 @@
+footer{
+    background-color: #F0572D;
+    color: #FFFFFF;
+    min-height: 58px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    .bloco-logo{
+        img{
+            margin-right: 10px;
+            @media (max-width: 440px) {
+                display: none;
+            }
+
+        }
+    }
+
+    .bloco-sociais{
+        img{
+            padding: 5px;
+        }
+
+    }
+}

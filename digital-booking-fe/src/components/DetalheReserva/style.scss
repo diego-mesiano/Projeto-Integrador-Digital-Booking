@@ -1,0 +1,461 @@
+.titulosReserva{
+    margin:0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: left;
+    color: #31363F;
+    margin-bottom: 10px;
+
+}
+
+
+.containerReserva{
+    margin-top: 78px;
+    .cabecalhoReserva{
+        background-color:#545776;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .tituloReserva{
+            opacity: 1;
+            color: #F3F1ED;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        .produtoReserva{
+            color: #FFFFFF;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        
+    }
+}
+
+.detalhesReserva{
+    padding: 10%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+    .formularioReserva{
+        padding-top: 10px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        background-color: #FFFFFF;
+        min-width: 664px;
+        label{
+            font-size: 13px;
+            font-weight: 700;
+            
+            
+        }
+        input{
+            width: 280px;
+            
+            color: black;
+            
+        }
+        input:disabled{
+            background-color: #FFFFFF;
+            width: 280px;
+            color: gray;
+            opacity: 0.5;
+        }
+    }
+}
+
+.horarioReserva{
+    .horaReserva{
+        
+        padding-top: 10px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        background-color: #FFFFFF;
+        min-width: 664px;
+        
+        h3{
+            margin: 0;
+            margin-left: 2px;
+            padding-top: 6px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        label{
+            font-size: 14px;
+        }
+    }
+}
+
+.colunaB{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    margin-top: 40px;
+    
+    .dadosReserva{
+        min-width: 700px;
+        max-width: 700px;
+        .titulosReserva{
+            padding: 2%;
+            margin: 0;
+            font-weight: 700;
+            
+        }
+        img{
+            min-width: 700px;
+            max-width: 700px;
+        }
+        .dadosProdutoReserva{
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .categoriaProdutoReserva{
+            margin: 0;
+            padding: 0;
+            font-weight: 700;
+            font-size: 15px;
+            
+            opacity: 0.5;
+        }
+        .nomeProdutoReserva{
+            padding: 0;
+            margin: 0;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        .geraEstrelaReserva{
+            margin-left: -6.5px;
+            margin-top: -5px;
+        }
+        .localProdutoReserva{
+            .enderecoProdutoReserva{
+                margin-left: 10px;
+            }
+        }
+
+        .checkinReserva{
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .checkoutReserva{
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .btn-warning:hover {
+            color: #F0572D;
+            border-color: #F0572D;
+            background-color: #FFFFFF;
+            font-weight: 700;
+         }
+         .btn-warning{
+            border-color: #F0572D;
+            background-color: #F0572D;
+            color: #FFFFFF;
+            font-weight: 600;
+         }
+            
+        
+    }
+}
+
+.politicasProduto{
+        padding: 10%;
+        background-color: #FFFFFF;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        h2{
+            font-weight: 600;
+            font-size: 24px;
+        }
+        .normasProduto{
+            text-align: justify;
+            strong{
+                color:#F0572D
+            }
+        }
+    
+        .segurancaProduto{
+            text-align: justify;
+            strong{
+                color:#F0572D
+            }
+        }
+    
+        .cancelamentoProduto{
+            text-align: justify;
+            strong{
+                color:#F0572D
+            }
+        }
+    }
+
+    @media (max-width: 1714px) {
+        .cabecalhoReserva{
+            padding-left: 10%;
+            padding-right: 10%;
+            
+        }
+        .detalhesReserva{
+            padding-left: 9%;
+            padding-right: 9%;
+        }
+    }
+
+    @media (max-width: 1673px) {
+        .cabecalhoReserva{
+            padding-left: 9%;
+            padding-right: 9%;
+        }
+        .detalhesReserva{
+            padding-left: 8%;
+            padding-right: 8%;
+        }
+    }
+
+    @media (max-width: 1637px) {
+        .cabecalhoReserva{
+            padding-left: 8%;
+            padding-right: 8%;
+        }
+        .detalhesReserva{
+            padding-left: 7%;
+            padding-right: 7%;
+        }
+    }
+
+    @media (max-width: 1595px) {
+        .cabecalhoReserva{
+            padding-left: 7%;
+            padding-right: 7%;
+        }
+        .detalhesReserva{
+            padding-left: 6%;
+            padding-right: 6%;
+        }
+    }
+
+    @media (max-width: 1569px) {
+        .colunaB{
+            .dadosReserva{
+                min-width: 500px;
+                max-width: 500px;
+                img{
+                    min-width: 500px;
+                    max-width: 500px;
+                }
+            
+            }
+            .checkinReserva{
+                padding-top: 4%;
+                padding-bottom: 4%;
+            }
+    
+            .checkoutReserva{
+                padding-top: 4%;
+                padding-bottom: 4%;
+            }
+            .btn-warning{
+                margin-top:17px;
+            }
+        }
+    }
+
+    @media (max-width: 1337px) {
+        .colunaB{
+            .dadosReserva{
+                min-width: 300px;
+                max-width: 300px;
+                img{
+                    min-width: 300px;
+                    max-width: 300px;
+                }
+            
+            }
+            .checkinReserva{
+                padding-top: 15%;
+                padding-bottom: 15%;
+            }
+    
+            .checkoutReserva{
+                padding-top: 15%;
+                padding-bottom: 15%;
+            }
+            .btn-warning{
+                margin-top:17px;
+            }
+        }
+    }
+
+    @media (max-width: 1107px) {
+
+        .titulosReserva{
+            font-size: 20px;
+        }
+        .detalhesReserva{
+            
+            
+            .formularioReserva{
+                min-width: 332px;
+                max-width: 332px;
+                
+            }
+        
+        }
+        
+        .colunaB{
+            .dadosReserva{
+                min-width: 500px;
+                max-width: 500px;
+                img{
+                    min-width: 500px;
+                    max-width: 500px;
+                }
+            
+            }
+            .checkinReserva{
+                padding-top: 15%;
+                padding-bottom: 15%;
+            }
+    
+            .checkoutReserva{
+                padding-top: 15%;
+                padding-bottom: 15%;
+            }
+            .btn-warning{
+                margin-top:80px;
+                height: 80px;
+            }
+        }
+
+         #dadosVertical{
+             flex-direction: column;
+         }
+
+        .horarioReserva{
+            .horaReserva{
+                min-width: 332px;
+                max-width: 332px;
+                select#hora{
+                    width: 300px;
+                }
+            }
+        }
+
+    }
+
+    @media (max-width: 965px){
+
+        .colunaB{
+            .dadosReserva{
+                min-width: 300px;
+                max-width: 300px;
+                img{
+                    min-width: 300px;
+                    max-width: 300px;
+                }
+            }
+            .checkinReserva{
+                padding-top: 35.5%;
+                padding-bottom: 35.5%;
+            }
+    
+            .checkoutReserva{
+                padding-top: 35.5%;
+                padding-bottom: 35.5%;
+            }
+        }
+    }
+
+    @media (max-width: 731px){
+        
+        .detalhesReserva{
+            flex-direction: column;
+            align-items: center;
+            h2{
+                text-align: center;
+            }
+            .formularioReserva{
+               width: 100vw;
+                #dadosVertical{
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                input{
+                    max-width:80vw;
+                    
+
+                }
+                input:disabled{
+                    max-width: 80vw;
+                    
+                   
+                }
+            }
+            .calendarioReserva2{
+                text-align: center;
+                h2{
+                    text-align: center;
+                }
+            }
+            .horarioReserva{
+                .horaReserva{
+                    align-items: center;
+                    min-width: 332px;
+                    max-width: 332px;
+                    select#hora{
+                        width: 300px;
+                    }
+                }
+            }
+            .colunaA{
+                
+                justify-content: center;
+                align-items: center;
+                .horaReserva{
+                    width: 100vw;
+                }
+            }
+
+            .colunaB{
+                min-width: 332px;
+                    max-width: 332px;
+                    align-items: center;
+                .dadosReserva{
+                    min-width: 332px;
+                    max-width: 332px;
+                    img{
+                        min-width: 332px;
+                        max-width: 332px;
+                    }
+                }
+                .checkinReserva{
+                    padding-top: 10%;
+                    padding-bottom: 10%;
+                }
+        
+                .checkoutReserva{
+                    padding-top: 10%;
+                    padding-bottom: 10%;
+                }
+                .btn-warning{
+                    margin-top:30px;
+                    
+                }
+            }
+        }
+    }

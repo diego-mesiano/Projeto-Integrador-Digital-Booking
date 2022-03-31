@@ -1,0 +1,66 @@
+.nav-bar{
+   padding:20px;
+   .slogan{
+      margin-top: 17px;
+      margin-left: 12px;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 20px;
+      color: #545776
+   }
+   .logar{
+      .btn-criar-conta{
+         margin-right: 10px;
+         width: 206px;
+         height: 40px;
+      }
+      .btn-login{
+         width: 206px;
+         height: 40px;
+      }
+      .btn-outline-warning {
+         color: #F0572D;
+         border-color: #F0572D;
+      }
+      .btn-outline-warning:hover{
+         background-color: #F0572D;
+         color: #FFFFFF;
+      }
+   }
+
+   .logado{
+      justify-content: flex-end;
+      .painel-logado{
+         display: flex;
+         align-items: center;
+         .nome-completo{
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            align-items: center;
+            .saudacao{
+               color: rgba(0, 0, 0, 0.5);;
+            }
+            .nome{
+               color: #F0572D;
+            }
+         }
+         .logout{
+            cursor:pointer;
+            font-size: 22px;
+            display: block;
+            align-self:baseline;
+            font-weight: bold;
+         }
+      }
+      
+   }
+   @media (max-width: 350px) {
+      .slogan{
+         display:none;
+      }
+   }
+
+}
+

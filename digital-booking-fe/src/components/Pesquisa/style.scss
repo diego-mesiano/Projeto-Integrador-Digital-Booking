@@ -1,0 +1,136 @@
+.bloco-pesquisa{
+    background-color: #31363F;
+    padding-top: 86px;
+    padding-bottom: 18px ;
+    h1{
+        font-weight: bold;
+        font-size: 2vw;
+        color: #DFE4EA;
+        text-align: center;
+        @media (max-width: 940px) {
+            font-size: 3vw;
+        }
+        @media (max-width: 645px) {
+            font-size: 4vw;
+        }
+    }
+    .formulario{
+        margin-left: 12%;
+        margin-right: 12%;
+        
+        
+        @media (max-width: 1540px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        //div do input de localização
+        .inputsContainer{
+            max-width: 100%;
+            @media (max-width: 1540px) {
+                flex-direction: column;
+            }
+
+            .inputLocal{
+                margin-right: 60px;
+                @media (max-width: 1540px){
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .input-pesquisa {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            color: #7F7F7F;
+            max-width: 400px;
+            min-width: 400px;
+            @media (max-width: 510px){
+                max-width: 297px;
+                min-width: 297px;
+            }
+           
+            .inputCidades{
+                background-color: #FFFFFF;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-top-left-radius: 1px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                color: #7F7F7F;
+            }
+            
+        }
+
+        .btn-buscar{
+                background-color: #F0572D;
+                color: #FFFFFF;
+                border-color: #F0572D;
+                min-width: 206px;
+                min-height: 40px;
+                max-width: 206px;
+                max-height: 40px;
+                               
+            
+        }
+
+        .btn-buscar:hover{
+            background-color: #f67d5b;
+            color: #FFFFFF;
+            border-color: #f67d5b;   
+
+            }
+
+        .btnContainer{
+            @media (max-width: 1540px){
+                margin-top: 10px;
+            }
+
+        }
+    }
+
+
+
+    //esse ajuste é para o span do calendário não quebrar quando a tela reduzir
+    .input-group{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    //personalizando datepicker
+    .react-datepicker{
+        display: flex;        
+    }
+    .react-datepicker__close-icon::after{
+        background-color: #31363F;
+    }
+
+    .react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range){
+        background-color: #F0572D;
+    }
+
+    .react-datepicker__day--keyboard-selected{
+        background-color: #F0572D;
+    }
+
+    .react-datepicker__day--keyboard-selected:hover{
+        background-color: #a12f0f;
+    }
+
+    .react-datepicker__day--in-range{
+        background-color: #F0572D;
+    }
+
+    .react-datepicker__day--in-range:hover{
+        background-color: #F0572D;
+    }
+
+    .react-datepicker__day--selected, .react-datepicker__day--in-selecting-range{
+        background-color: #F0572D;
+    }
+    
+}
