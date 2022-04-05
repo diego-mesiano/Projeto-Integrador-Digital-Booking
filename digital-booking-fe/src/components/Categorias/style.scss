@@ -17,7 +17,22 @@
         margin-left: 10%;
         margin-right: 10%;
     }
-    
+    @media (max-width: 500px) {
+        margin-left: 0;
+        margin-right: 0;
+        
+    }
+    .cardsCorpo{
+        @media (max-width: 500px) {
+            margin-left: 0;
+            margin-right: 0;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
     
 
     .tituloCategoria{
@@ -29,7 +44,8 @@
             color: #191B1D;
             @media (max-width: 570px) {
                 text-align: center;
-                font-size: 18px;
+                margin-left: 5px;
+                margin-right: 5px;
             }
         }
         

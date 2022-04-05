@@ -23,17 +23,19 @@ export default function CardProdutos(props) {
                     <CCol md={8}>
                         <CCardBody>
                             <CCardTitle>
-                                <div className='d-flex justify-content-between'>
+                                <div className='d-flex justify-content-between align-items-center'>
                                     <div className='areaTituloProdutos '>
                                         <div className='categoriaProduto d-flex'>
                                             <div className='categoriaNome'>
                                                 {props.categoria.toString().toUpperCase()}
                                             </div>
-                                            <GeraEstrelas qtd={props.estrelas} />
+                                            <div>
+                                                <GeraEstrelas qtd={props.estrelas} />
+                                            </div>
                                             
                                         </div>
                                         <div className='nomeProduto'>
-                                            {props.produto}
+                                            {props.produto.substring(0,60)} {props.produto.length > 60 ? "..." : ""}
                                         </div>
                                     </div>
                                     <div className='areaAvaliacao' style={{ textAlign: 'right' }}>
@@ -61,13 +63,13 @@ export default function CardProdutos(props) {
 
 
 
-                            <CCardText>
-                                {props.descricao}
+                            <CCardText className='descricaoProdutoCard'>
+                                {props.descricao.substring(0,130)}{props.descricao.length > 130 ? "..." : ""}
                             </CCardText>
 
                             <CCardText>
                                 <div className="d-grid gap-2">
-                                    <Button variant="primary" size="lg" id='btnVerMais' onClick={()=> navigate(`/produto/${props.id}`)}>
+                                    <Button variant="warning" size="lg" onClick={()=> navigate(`/produto/${props.id}`)}>
                                         Ver mais
                                     </Button>
                                 </div>

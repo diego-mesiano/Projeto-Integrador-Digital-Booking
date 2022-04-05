@@ -9,6 +9,15 @@ h2{
 
 .formLogin{
     text-align: center;
+    .errosValidacao{
+        margin: 0;
+        padding: 0;
+        color: red;
+        text-align: left;
+        margin-top: -5px;
+        font-size: 11px;
+
+    }
     .nomeSobrenome{
         @media (max-width: 650px) {
             flex-direction: column;

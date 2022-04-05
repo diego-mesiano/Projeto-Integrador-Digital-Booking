@@ -5,21 +5,43 @@ import {Link} from 'react-router-dom'
 import Swal from 'sweetalert2'
 import { useLogado } from '../../../context/Logado'
 import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import api from '../../../services/Api'
 
 export default function LoginForm(props) {
 
     const {logado, setLogado} = useLogado();
     const navigate = useNavigate();
+    
+    const [usuarios, setUsuarios] = useState([])
 
+    useEffect(() => {
+        api
+            .get('/usuario')
+            .then((response) => {
+                setUsuarios(response.data)
+                
+            })
+            .catch((err) => console.error(err))
+    }, [setUsuarios])
+    
     const handleSubmit = (values) => {
-        
-        if (
+
+        let filtro = [];
+
+        usuarios.map(({ email, senha, nome, sobrenome, id }) => {
+            if(email === values.email){
+                filtro.push(email, senha, nome, sobrenome, id)
+            }
+            return null;
+        })
+
+       if (
         values.email &&
         values.senha.toString().length > 6 &&
-        values.email === usuarioTeste.email &&
-        values.senha === usuarioTeste.senha){
-            setLogado((itens)=>({...itens, autenticado:true}));
-
+        values.email === filtro[0] &&
+        values.senha === filtro[1]){
+            setLogado((itens)=>({...itens, autenticado:true, id:filtro[4], nome:filtro[2], sobrenome:filtro[3], email:filtro[0]}));
             navigate(logado.ultimaPagina);
         }
         else{
@@ -33,11 +55,6 @@ export default function LoginForm(props) {
             
         }   
         
-    }
-
-    const usuarioTeste = {
-        email: "teste@teste",
-        senha: "1234567"
     }
 
     return (

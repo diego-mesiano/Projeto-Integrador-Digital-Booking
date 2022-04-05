@@ -12,7 +12,6 @@ export default function ListaProdutos(props) {
     const [produtos, setProdutos] = useState([]);
     const { categoriaId } = useParams();
     const [nomeCategoria, setNomeCategoria] = useState("");
-
     const {setLogado } = useLogado({});
     
     
@@ -43,6 +42,18 @@ export default function ListaProdutos(props) {
                 })
                 .catch((err)=>console.error(err))
         }
+
+        if (props.por==="cidades"){
+            api
+                .get(`/cidades/${categoriaId}`)
+                .then((response) => { 
+                    setProdutos(response.data.produtos)
+                    setNomeCategoria(response.data.nome)
+                })
+                .catch((err)=>console.error(err))
+
+                
+        }
     },[props.por, categoriaId])
 
     return (
@@ -53,7 +64,10 @@ export default function ListaProdutos(props) {
                         <h2>Recomendações</h2> : 
 
                     props.por === "categoria" ?
-                        <h2>{nomeCategoria}s disponíveis</h2> : null
+                        <h2>{nomeCategoria} disponíveis</h2> : 
+
+                    props.por === "cidades" ?
+                        <h2>Disponíveis em {nomeCategoria}</h2> : null
                 }
             </div>
             <div className="d-flex flex-wrap justify-content-between">
@@ -63,8 +77,27 @@ export default function ListaProdutos(props) {
                 produtos.map(({ id, nome,descricao,nota,caracteristicas,imagems,categoria,cidade, titulo}) => {
                     return (
                         <div key={id}>
-                            <CardProdutos id={id} imagem={(imagems.length > 0 ? imagems[0].urlImg : <Spinner animation="border" />)} estrelas={Math.round(nota/2)} categoria={props.por === "todos" ? categoria.titulo : nomeCategoria } produto={nome} nota={nota} notaVerbal={nota} distancia={cidade.nome} descricao={descricao}>
-                                <GeraIcones  wifi={caracteristicas[0].wifi} tv={caracteristicas[0].tv} pets={caracteristicas[0].pets} arcondicionado={caracteristicas[0].arcondicionado} estacionamento={caracteristicas[0].estacionamento} piscina={caracteristicas[0].piscina} fumar={caracteristicas[0].fumar} />
+
+                            <CardProdutos 
+                                id={id} 
+                                imagem={(imagems.length > 0 ? imagems[0].urlImg : <Spinner animation="border" />)} 
+                                estrelas={Math.round(nota/2)} 
+                                categoria={props.por === "todos" ? categoria.titulo : nomeCategoria } 
+                                produto={nome} 
+                                nota={nota} 
+                                notaVerbal={nota} 
+                                distancia={props.por ==="cidades"? nomeCategoria : cidade.nome} 
+                                descricao={descricao}
+                            >
+                                <GeraIcones  
+                                    wifi={caracteristicas[0].wifi} 
+                                    tv={caracteristicas[0].tv} 
+                                    pets={caracteristicas[0].pets} 
+                                    arcondicionado={caracteristicas[0].arcondicionado} 
+                                    estacionamento={caracteristicas[0].estacionamento} 
+                                    piscina={caracteristicas[0].piscina} 
+                                    fumar={caracteristicas[0].fumar} />
+
                             </CardProdutos>
                         </div>
                     )

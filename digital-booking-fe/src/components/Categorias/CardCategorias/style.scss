@@ -42,6 +42,33 @@
        object-fit:cover;
        border-top-left-radius: 10px;
        border-top-right-radius: 10px;
+       width: 310px;
+       height: 181px;
+       
+        @media (max-width: 1390px) {
+            width: 250px;
+            height: 146px;
+        }
+        @media (max-width: 1110px) {
+            width: 200px;
+            height: 124px;
+        }
+        @media (max-width: 905px) {
+            width: 310px;
+            height: 194px;
+        }
+        @media (max-width: 725px) {
+            width: 250px;
+            height: 146.36px;
+        }
+        @media (max-width: 630px) {
+            width: 200px;
+            height: 124px;
+        }
+        @media (max-width: 500px) {
+            width: 310px;
+            height: 194px;
+        }
     }
     .cardDescricao{
         padding-top: 5px;

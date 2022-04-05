@@ -3,10 +3,11 @@ import { Navbar, Nav} from 'react-bootstrap'
 import logo from '../../assets/img/logoNoSlogan.svg'
 import {Link} from 'react-router-dom'
 import { useLogado } from '../../context/Logado'
-
+import { useNavigate } from 'react-router-dom';
 
 export default function Cabecalho(props) {
     const {logado, setLogado} = useLogado();
+    const navigate = useNavigate();
 
     return (
         <header>
@@ -32,15 +33,15 @@ export default function Cabecalho(props) {
                             <svg height="38" width="38">
                                 <circle fill="#31363F" cx="19" cy="19" r="19" />
                                 <text fontSize="19" fontFamily="Quicksand" fontWeight="bold" fill="white" textAnchor="middle" x="18.5" y="25">
-                                    JO
+                                    {logado.nome[0].toUpperCase() + logado.sobrenome[0].toUpperCase()}
                                 </text>
                             </svg>
                         </div>
                         <div className='nome-completo'>
                             <div className='saudacao'>Olá,</div>
-                            <div className='nome'>Jeziel Oliveira</div>
+                            <div className='nome'>{logado.nome} {logado.sobrenome}</div>
                         </div>
-                        <div className='logout' onClick={(item)=>setLogado({autenticado: false , checkIn: null, checkOut: null, ultimaPagina: null})}>
+                        <div className='logout' onClick={(item)=>{setLogado({autenticado: false , checkIn: null, checkOut: null, ultimaPagina: null, id:null, nome:null, sobrenome:null, email:null},navigate('/'))}}>
                             X
                         </div>
                     </div>
